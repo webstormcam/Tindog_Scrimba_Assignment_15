@@ -68,3 +68,22 @@ body{
     font-size: 1.5rem;
     color: #B7B7B7;
 }
+
+.button-zone{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+button{
+    border-radius: 50%;
+    width: 91px;
+    height: 91px;
+    margin: 0em 1em;
+}
+
+
+.feeling-icon{
+    width: 35px;
+    height: 35px;
+}
