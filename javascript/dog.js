@@ -13,4 +13,6 @@ class DogBuilder{
     }
 }
 
+export default DogBuilder
+
 
