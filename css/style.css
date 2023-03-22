@@ -2,3 +2,40 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.interaction-zone{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 550px;
+    padding: 1rem;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon{
+    height: 34px;
+    width: 32px;
+}
+
+.paw-logo{
+    background-color: red;
+    background: rgb(231,60,10);
+background: linear-gradient(90deg, rgba(231,60,10,1) 41%, rgba(255,121,0,1) 64%);
+    padding: 0.5rem 2rem;
+    border-radius: 1.2rem;
+}
+
+.paw-icon{
+    width: 20px;
+    height: 20px;
+}
