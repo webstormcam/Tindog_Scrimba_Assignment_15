@@ -1,4 +1,4 @@
-import { dislikedDogs, likedDogs } from "./data";
+import {dislikedDogs,likedDogs} from "./data.js";
 
 class DogBuilder{
     constructor(data){

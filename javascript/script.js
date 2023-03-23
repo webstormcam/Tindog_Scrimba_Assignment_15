@@ -10,12 +10,6 @@ function render(){
     document.getElementById('dogZone').innerHTML = availableDog.getDogHtml() 
 }
 
-
-
-
-
-
-
 render()
 
 
