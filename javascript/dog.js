@@ -23,7 +23,7 @@ const shuffleArray = array => {
       array[j] = temp;
     }
   }
-/// Set in the timer and disable all the buttons :) Plus lets work on the results section
+/// Set in the timer, place the sticker and disable all the buttons :) Plus lets work on the results section
   function dislike(currentDog){
     currentDog.hasBeenSwiped =true
     dislikedDogs.push(currentDog)
@@ -35,6 +35,6 @@ const shuffleArray = array => {
     likedDogs.push(currentDog)
   }
 
-export {DogBuilder,shuffleArray}
+export {DogBuilder,shuffleArray,dislike,like}
 
 

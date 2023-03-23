@@ -1,6 +1,6 @@
 
 import {dogData,likedDogs,dislikedDogs} from './data.js'
-import {DogBuilder,shuffleArray} from './dog.js'
+import {DogBuilder,shuffleArray,dislike,like} from './dog.js'
 
 let availableDog =""
 
