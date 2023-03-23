@@ -22,6 +22,6 @@ const shuffleArray = array => {
     }
   }
 
-export default DogBuilder
+export { DogBuilder,shuffleArray}
 
 

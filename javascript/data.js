@@ -25,5 +25,6 @@ const dogData = [
 ]
 
 let likedDogs =[]
+let dislikedDogs =[]
 
-export default dogData
+export {dogData,likedDogs,dislikedDogs}
