@@ -24,4 +24,6 @@ const dogData = [
     }
 ]
 
+let likedDogs =[]
+
 export default dogData
