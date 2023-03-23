@@ -1,3 +1,5 @@
+import { dislikedDogs, likedDogs } from "./data";
+
 class DogBuilder{
     constructor(data){
         Object.assign(this,data)
@@ -21,7 +23,18 @@ const shuffleArray = array => {
       array[j] = temp;
     }
   }
+/// Set in the timer and disable all the buttons :) Plus lets work on the results section
+  function dislike(currentDog){
+    currentDog.hasBeenSwiped =true
+    dislikedDogs.push(currentDog)
+  }
 
-export { DogBuilder,shuffleArray}
+  function like(currentDog){
+    currentDog.hasBeenSwiped = true
+    currentDog.hasBeenLiked = true
+    likedDogs.push(currentDog)
+  }
+
+export {DogBuilder,shuffleArray}
 
 
