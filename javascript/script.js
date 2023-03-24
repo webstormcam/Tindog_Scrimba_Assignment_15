@@ -6,21 +6,22 @@ let availableDog =""
 const dislike = document.getElementById('dislike')
 const like = document.getElementById('like')
 
-const dislikeAction = dislike.addEventListener('click',function(){
+dislike.addEventListener('click',function(){
   like.classList.add('noHover')
-  dislike.classList.add('red-background')
+  dislike.classList.add('red-background', 'noHover')
     availableDog.hasBeenSwiped = true
     dislikedDogs.push(availableDog)
     console.log(dislikedDogs)
     setTimeout(render,3000)
    
 })
-const likeAction = like.addEventListener('click',function(){
+like.addEventListener('click',function(){
   dislike.classList.add('noHover')
-  like.classList.add('green-background')
+  like.classList.add('green-background', 'noHover')
   availableDog.hasBeenSwiped = true
   availableDog.hasBeenLiked = true
   likedDogs.push(availableDog)
+  console.log(likedDogs)
   setTimeout(render,3000)
   
 })
