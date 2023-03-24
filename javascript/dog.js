@@ -1,4 +1,4 @@
-import {dislikedDogs,likedDogs} from "./data.js";
+
 
 class DogBuilder{
     constructor(data){
@@ -24,7 +24,8 @@ const shuffleArray = array => {
     }
   }
 /// Set in the timer, place the sticker and disable all the buttons :) Plus lets work on the results section
-  
+
+
 
 export {DogBuilder,shuffleArray}
 
