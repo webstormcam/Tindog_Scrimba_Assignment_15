@@ -11,7 +11,9 @@ const dislikeAction = dislike.addEventListener('click',function(){
   dislike.classList.add('red-background')
     availableDog.hasBeenSwiped = true
     dislikedDogs.push(availableDog)
+    console.log(dislikedDogs)
     setTimeout(render,3000)
+   
 })
 const likeAction = like.addEventListener('click',function(){
   dislike.classList.add('noHover')
@@ -20,13 +22,13 @@ const likeAction = like.addEventListener('click',function(){
   availableDog.hasBeenLiked = true
   likedDogs.push(availableDog)
   setTimeout(render,3000)
+  
 })
 
 
   function render(){
     dislike.classList.remove('noHover', 'red-background')
     like.classList.remove('noHover', 'green-background')
-    like.disabled = false
       shuffleArray(dogData)
        availableDog = new DogBuilder(dogData.shift())
       document.getElementById('dogZone').innerHTML = availableDog.getDogHtml() 
