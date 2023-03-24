@@ -107,3 +107,16 @@ cursor: pointer;
     width: 35px;
     height: 35px;
 }
+
+
+
+
+
+.decided-image{
+    width: 231px;
+    position: absolute;
+    top: 2em ;
+    left: 1em;
+    transform: rotate(-10deg);
+}
+
