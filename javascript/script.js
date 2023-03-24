@@ -10,10 +10,14 @@ dislike.addEventListener('click',function(){
   like.classList.add('noHover')
   dislike.classList.add('red-background', 'noHover')
     availableDog.hasBeenSwiped = true
-    document.getElementById('dogZone').innerHTML += '<img class="dislike-image decided-image" src="images/nope-image.png" alt="disliked-image"></img>'
+    document.getElementById('dogZone').innerHTML += '<img class="dislike-image  decided-image " src="images/nope-image.png" alt="disliked-image"></img>'
     dislikedDogs.push(availableDog)
-    console.log(dislikedDogs)
-    setTimeout(render,3000)
+    if(dogData.length>0){
+      setTimeout(render,3000)
+      console.log(dogData)
+    } else{
+      setTimeout(renderEnding,3000)
+    }
    
 })
 like.addEventListener('click',function(){
@@ -21,10 +25,15 @@ like.addEventListener('click',function(){
   like.classList.add('green-background', 'noHover')
   availableDog.hasBeenSwiped = true
   availableDog.hasBeenLiked = true
-  document.getElementById('dogZone').innerHTML+='<img class="like-image decided-image" src="images/like-image.png" alt="like image">'
+  document.getElementById('dogZone').innerHTML+='<img class="like-image  decided-image " src="images/like-image.png" alt="like image">'
   likedDogs.push(availableDog)
-  console.log(likedDogs)
-  setTimeout(render,3000)
+  if(dogData.length>0){
+    setTimeout(render,3000)
+    console.log(dogData)
+  } else{
+    setTimeout(renderEnding,3000)
+  }
+  
   
 })
 
@@ -35,6 +44,12 @@ like.addEventListener('click',function(){
       shuffleArray(dogData)
        availableDog = new DogBuilder(dogData.shift())
       document.getElementById('dogZone').innerHTML = availableDog.getDogHtml() 
+  }
+
+
+
+  function renderEnding(){
+    document.getElementById('dogZone').innerHTML = "LOL"
   }
 
 render()
