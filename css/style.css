@@ -117,3 +117,14 @@ cursor: pointer;
     transform: rotate(-10deg);
 }
 
+.your-likes{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.round-profile-image{
+    border-radius: 50%;
+    width: 100px;
+}
+

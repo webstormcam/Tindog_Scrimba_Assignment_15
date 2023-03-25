@@ -49,7 +49,26 @@ like.addEventListener('click',function(){
 
 
   function renderEnding(){
-    document.getElementById('dogZone').innerHTML = "LOL"
+    document.getElementById('middleBottomArea').innerHTML = `<div class="your-likes">
+    
+    ${displayLikedProfiles()}
+    </div>`
+  }
+
+
+  function displayLikedProfiles(){
+    let likedDoggies =''
+    for(const liked of likedDogs){
+      likedDoggies+=`
+      <div class="liked-dog">
+      <div class="dog-image-section">
+      <img class="round-profile-image" src="${liked.avatar}">
+      </div>
+      </div>
+      
+      `
+    }
+    return likedDoggies
   }
 
 render()

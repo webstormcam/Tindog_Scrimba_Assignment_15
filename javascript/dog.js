@@ -14,7 +14,7 @@ class DogBuilder{
         </div>`
     }
 }
-/// I got this from the internet lol
+
 const shuffleArray = array => {
     for (let i = array.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -23,9 +23,6 @@ const shuffleArray = array => {
       array[j] = temp;
     }
   }
-/// Set in the timer, place the sticker and disable all the buttons :) Plus lets work on the results section
-
-
 
 export {DogBuilder,shuffleArray}
 
