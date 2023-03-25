@@ -49,8 +49,10 @@ like.addEventListener('click',function(){
 
 
   function renderEnding(){
-    document.getElementById('middleBottomArea').innerHTML = `<div class="your-likes">
+    document.getElementById('middleBottomArea').innerHTML = `
     
+    <div class="your-likes">
+    <h1>LIKED DOGGIES</h1>
     ${displayLikedProfiles()}
     </div>`
   }
@@ -63,6 +65,10 @@ like.addEventListener('click',function(){
       <div class="liked-dog">
       <div class="dog-image-section">
       <img class="round-profile-image" src="${liked.avatar}">
+      </div>
+      <div class="profile-words">
+      <p class="dog-name">${liked.name}</p>
+      <p class="dog-saying">${liked.bio}</p>
       </div>
       </div>
       
