@@ -50,7 +50,6 @@ like.addEventListener('click',function(){
 
   function renderEnding(){
     document.getElementById('middleBottomArea').innerHTML = `
-    
     <div class="your-likes">
     <h1>LIKED DOGGIES</h1>
     ${displayLikedProfiles()}

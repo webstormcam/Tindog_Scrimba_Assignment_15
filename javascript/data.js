@@ -21,6 +21,14 @@ const dogData = [
         bio: "How you doin?",
         hasBeenSwiped: false,
         hasBeenLiked: false
+    },
+    {
+        name: "General",
+        avatar: "images/General.jpg",
+        age: 16,
+        bio: "我嘅所有者唔知我創建了此账户",
+        hasBeenSwiped: false,
+        hasBeenLiked: false
     }
 ]
 
