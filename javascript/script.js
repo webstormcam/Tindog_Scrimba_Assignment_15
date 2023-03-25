@@ -14,7 +14,6 @@ dislike.addEventListener('click',function(){
     dislikedDogs.push(availableDog)
     if(dogData.length>0){
       setTimeout(render,3000)
-      console.log(dogData)
     } else{
       setTimeout(renderEnding,3000)
     }
@@ -27,9 +26,10 @@ like.addEventListener('click',function(){
   availableDog.hasBeenLiked = true
   document.getElementById('dogZone').innerHTML+='<img class="like-image  decided-image " src="images/like-image.png" alt="like image">'
   likedDogs.push(availableDog)
+  console.log(likedDogs.length)
   if(dogData.length>0){
     setTimeout(render,3000)
-    console.log(dogData)
+    
   } else{
     setTimeout(renderEnding,3000)
   }
@@ -49,12 +49,24 @@ like.addEventListener('click',function(){
 
 
   function renderEnding(){
-    document.getElementById('middleBottomArea').innerHTML = `
-    <div class="your-likes">
-    <h1>LIKED DOGGIES</h1>
+   let endingMessage = document.getElementById('middleBottomArea')
+   let words =``
+   if(likedDogs.length>0){
+    words =`<div class="your-likes"><h1>LIKED DOGGIES</h1>
     ${displayLikedProfiles()}
     </div>`
+   } else{
+  words = `<div class="your-likes"><h1>YOU LIKED NO DOGS, YOU'RE PICKY!!</h1>
+  <div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/3ohs7Mt1qgqJS8jsd2" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/nirvanna-viceland-nirvanna-the-band-show-3ohs7Mt1qgqJS8jsd2"></a></p>
+  
+  </div>`
+
+   }
+   endingMessage.innerHTML=words
+   
   }
+
+  
 
 
   function displayLikedProfiles(){

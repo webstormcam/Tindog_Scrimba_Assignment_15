@@ -25,11 +25,20 @@ const dogData = [
     {
         name: "General",
         avatar: "images/General.jpg",
-        age: 16,
+        age: 15,
         bio: "我嘅所有者唔知我創建了此账户",
         hasBeenSwiped: false,
         hasBeenLiked: false
+    },
+    {
+        name: "Boris",
+        avatar: "images/CAT.jpg",
+        age: 20,
+        bio: "I'm a dog, I swear!",
+        hasBeenSwiped: false,
+        hasBeenLiked: false
     }
+
 ]
 
 let likedDogs =[]
